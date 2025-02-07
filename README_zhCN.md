@@ -21,7 +21,7 @@
 ##### 更改 OpenWrt 源
 
 在 `build-openwrt.yml` 文件中, 将
-[此处](https://github.com/muhac/openwrt-action/blob/main/.github/workflows/build.yml#L60-L61)
+[此处](.github/workflows/build.yml#L60-L61)
 代码库和分支更改为你自己的源.
 
 我已经测试过从 [ImmortalWrt](https://github.com/muhac/openwrt-action/tree/immortal)

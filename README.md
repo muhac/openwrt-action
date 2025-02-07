@@ -20,7 +20,7 @@ You can choose to build from
 [Lean's source](https://github.com/coolsnowwolf/lede),
 or any other repository and branch/tag.
 Specify your choice in `build-openwrt.yml` file
-[here](https://github.com/muhac/openwrt-action/blob/main/.github/workflows/build.yml#L60-L61).
+[here](.github/workflows/build.yml#L60-L61).
 
 Tiny modification may be needed if you want to build from other repositories.
 I have my code tested building from
