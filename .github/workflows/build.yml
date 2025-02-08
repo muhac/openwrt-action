@@ -35,7 +35,7 @@ jobs:
       - name: Free disk space
         uses: jlumbroso/free-disk-space@main
         with:
-          tool-cache: false
+          tool-cache: true
 
       - name: Check free space
         run: df -Th
@@ -47,7 +47,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential clang flex bison g++ gawk \
               gcc-multilib g++-multilib gettext git libncurses-dev libssl-dev \
-              python3-distutils rsync unzip zlib1g-dev file wget qemu-utils
+              python3-setuptools mkisofs rsync unzip zlib1g-dev file wget qemu-utils
           sudo apt-get clean
 
       - name: Load settings
@@ -58,7 +58,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: 'immortalwrt/immortalwrt'
-          ref: 'v23.05.3'
+          ref: 'v24.10.0'
 
       - name: Configure basic packages
         run: bash ../settings/basic.sh

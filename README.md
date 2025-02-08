@@ -12,16 +12,21 @@ Special thanks to related projects:
 4. Make a cup of coffee, and wait for the build to finish (about 1 hour).
 5. Download firmware from `Actions/Artifacts` page.
 
-## Switch Branches
+## Build from other sources
 
 You can choose to build from
 [official OpenWrt](https://github.com/openwrt/openwrt),
 [ImmortalWrt](https://github.com/immortalwrt/immortalwrt),
 [Lean's source](https://github.com/coolsnowwolf/lede),
 or any other repository and branch/tag.
-
 Specify your choice in `build-openwrt.yml` file
-[here](https://github.com/muhac/openwrt-action/blob/main/.github/workflows/build.yml#L60-L61).
+[here](.github/workflows/build.yml#L60-L61).
+
+Tiny modification may be needed if you want to build from other repositories.
+I have my code tested building from
+[ImmortalWrt](https://github.com/muhac/openwrt-action/tree/immortal) and
+[Lean's source](https://github.com/muhac/openwrt-action/tree/leanlede).
+You can find the corresponding branches in this repository.
 
 ### I18N
 - [中文](README_zhCN.md)
