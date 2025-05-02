@@ -58,7 +58,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: 'openwrt/openwrt'
-          ref: 'v24.10.0'
+          ref: 'v24.10.1'
 
       - name: Configure basic packages
         run: bash ../settings/basic.sh
