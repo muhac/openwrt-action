@@ -17,7 +17,7 @@ tz='America/Toronto'
 sed -i "s#timezone='UTC'#zonename='$tz'#g" package/base-files/files/bin/config_generate
 
 ### LAN IP
-addr='10.10.1.3'
+addr='10.10.1.1'
 mask='255.255.0.0'
 
 # Modify the default LAN IP address and subnet mask  (/etc/config/network)
